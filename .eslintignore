@@ -1,0 +1,5 @@
+dist/*
+web/*
+app/*
+node_modules/*
+src/image.d.ts

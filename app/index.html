@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <script type="systemjs-importmap">
+    {
+      "imports": {
+        "react-dom": "https://unpkg.com/react-dom@17/umd/react-dom.production.min.js",
+        "axios": "https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js",
+        "prop-types": "https://unpkg.com/prop-types@15.7.2/prop-types.min.js",
+        "moment": "https://unpkg.com/moment@2.27.0/moment.js",
+        "react": "https://unpkg.com/react@17.0.2/umd/react.development.js",
+        "react-router-dom": "https://unpkg.com/react-router-dom@5.2.0/umd/react-router-dom.min.js",
+        "react-router": "https://unpkg.com/react-router@5.2.0/umd/react-router.min.js",
+        "antd": "https://cdnjs.cloudflare.com/ajax/libs/antd/4.15.2/antd.min.js",
+        "@ant-design/icons": "https://cdnjs.cloudflare.com/ajax/libs/ant-design-icons/4.6.2/index.umd.min.js"
+        }
+    }
+  </script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/antd/4.15.2/antd.min.css"
+    crossorigin="anonymous" />
+  <script type="text/javascript" crossorigin="true"
+    src="https://divsource.s3.eu-central-1.amazonaws.com/libs/system.js"></script>
+  <script type="text/javascript" crossorigin="true"
+    src="https://unpkg.com/systemjs/dist/extras/named-register.js"></script>
+  <script type="text/javascript" crossorigin="true" src="https://unpkg.com/systemjs/dist/extras/amd.js"></script>
+  <script>
+    window.System.import('/bundle.js')
+  </script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>React Typescript Webpack</title>
+  <style>
+    .ant-menu-dark .ant-menu-inline.ant-menu-sub {
+      background-color: transparent !important;
+    }
+
+    .logoWrapper {
+      height: 120px;
+      width: 100%;
+    }
+
+    .logo {
+      background-repeat: no-repeat;
+      top: var(--logo-bottom-position, 15px);
+      cursor: pointer;
+      display: inline-block;
+      height: var(--logo-height, 32px);
+      left: var(--logo-left-position, 17px);
+      position: absolute;
+      width: var(--logo-width, 128px);
+    }
+  </style>
+</head>
+
+<body>
+  <div id="root"></div>
+</body>
+
+</html>

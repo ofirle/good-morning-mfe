@@ -1,0 +1,27 @@
+{
+  "compilerOptions": {
+    "outDir": "./dist/@supersonic-admin-manage-partners-app",
+    "target": "es5",
+    "module": "es6",
+    "jsx": "react",
+    "noImplicitAny": false,
+    "allowSyntheticDefaultImports": true,
+    "moduleResolution": "node",
+    "sourceMap": true,
+    "declaration": true,
+    "declarationDir": "./dist/@supersonic-admin-manage-partners-app"
+  },
+  "exclude": [
+    "node_modules",
+    "app",
+    "web",
+    "dist",
+    "stories",
+    "build",
+    "scripts",
+    "acceptance-tests",
+    "webpack",
+    "jest",
+    "src/setupTests.ts"
+  ]
+}
