@@ -12,7 +12,7 @@ import '../app/supersonic.less';
 
 import Home from './components/Home';
 import Movie from './components/Movie';
-import { parseToken } from './services/utils.service';
+import { parseToken } from './supersonic-ui/services/utils.service';
 import SideMenu from './components/SideMenu';
 
 const { Header, Footer, Sider, Content } = Layout;
