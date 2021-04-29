@@ -1,6 +1,6 @@
 {
   "compilerOptions": {
-    "outDir": "./dist/@supersonic-admin-manage-partners-app",
+    "outDir": "./dist/@supersonic-micro-app-seed",
     "target": "es5",
     "module": "es6",
     "jsx": "react",
@@ -9,7 +9,7 @@
     "moduleResolution": "node",
     "sourceMap": true,
     "declaration": true,
-    "declarationDir": "./dist/@supersonic-admin-manage-partners-app"
+    "declarationDir": "./dist/@supersonic-micro-app-seed"
   },
   "exclude": [
     "node_modules",

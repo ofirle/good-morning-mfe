@@ -11,9 +11,9 @@ module.exports = {
     extensions: ['.ts', '.tsx', '.js']
   },
   externals: {
-    react: 'react',
-    reactDOM: 'react-dom',
-    ReactRouterDOM: 'react-router-dom'
+    "react": "React",
+    "react-dom": "ReactDOM",
+    'react-router-dom': 'ReactRouterDOM'
   },
   module: {
     rules: [
@@ -47,7 +47,7 @@ module.exports = {
     filename: 'bundle.js',
     path: path.resolve(__dirname, 'web'),
     library: {
-      type: "system"
+      type: "umd"
     },
   },
   devServer: {

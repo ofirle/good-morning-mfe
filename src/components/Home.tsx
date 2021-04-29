@@ -1,6 +1,6 @@
 import React from 'react';
 import { Typography, Layout, Row, Col, Button } from 'antd';
-import { useHistory } from 'react-router';
+import { useHistory } from 'react-router-dom';
 
 const Screen1 = () => {
   const history = useHistory();
@@ -8,7 +8,7 @@ const Screen1 = () => {
     <Layout.Content>
       <Row gutter={[0, 44]}>
         <Col>
-          <Typography.Title>Hi there! I'm a Micro-App</Typography.Title>
+          <Typography.Title>Hi there! I'm a Micro-App!!</Typography.Title>
           <Typography.Text type="success">Look! There is a routing below...</Typography.Text>
         </Col>
       </Row>

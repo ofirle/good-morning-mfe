@@ -2,31 +2,19 @@
 <html lang="en">
 
 <head>
-  <script type="systemjs-importmap">
-    {
-      "imports": {
-        "react-dom": "https://unpkg.com/react-dom@17/umd/react-dom.production.min.js",
-        "axios": "https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js",
-        "prop-types": "https://unpkg.com/prop-types@15.7.2/prop-types.min.js",
-        "moment": "https://unpkg.com/moment@2.27.0/moment.js",
-        "react": "https://unpkg.com/react@17.0.2/umd/react.development.js",
-        "react-router-dom": "https://unpkg.com/react-router-dom@5.2.0/umd/react-router-dom.min.js",
-        "react-router": "https://unpkg.com/react-router@5.2.0/umd/react-router.min.js",
-        "antd": "https://cdnjs.cloudflare.com/ajax/libs/antd/4.15.2/antd.min.js",
-        "@ant-design/icons": "https://cdnjs.cloudflare.com/ajax/libs/ant-design-icons/4.6.2/index.umd.min.js"
-        }
-    }
-  </script>
+  <script id="react" src="https://unpkg.com/react@17.0.2/umd/react.development.js"></script>
+  <script id="react-dom" src="https://unpkg.com/react-dom@17.0.2/umd/react-dom.development.js"></script>
+  <script id="react-router-dom" src="https://unpkg.com/react-router-dom@5.2.0/umd/react-router-dom.min.js"></script>
+  <script id="prop-types" src="https://unpkg.com/prop-types@15.7.2/prop-types.min.js"></script>
+  <script id="axios" src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js"></script>
+  <script id="moment" src="https://unpkg.com/moment@2.27.0/moment.js"></script>
+  <script id="antd" src="https://cdnjs.cloudflare.com/ajax/libs/antd/4.15.2/antd.min.js"></script>
+  <script id="@ant-design/icons"
+    src="https://cdnjs.cloudflare.com/ajax/libs/ant-design-icons/4.6.2/index.umd.min.js"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/antd/4.15.2/antd.min.css"
     crossorigin="anonymous" />
   <script type="text/javascript" crossorigin="true"
     src="https://divsource.s3.eu-central-1.amazonaws.com/libs/system.js"></script>
-  <script type="text/javascript" crossorigin="true"
-    src="https://unpkg.com/systemjs/dist/extras/named-register.js"></script>
-  <script type="text/javascript" crossorigin="true" src="https://unpkg.com/systemjs/dist/extras/amd.js"></script>
-  <script>
-    window.System.import('/bundle.js')
-  </script>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">

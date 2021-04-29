@@ -1,6 +1,6 @@
 import React from 'react';
 import { Typography, Layout, Row, Col, Button } from 'antd';
-import { useHistory, useParams } from 'react-router';
+import { useHistory, useParams } from 'react-router-dom';
 
 const Screen1 = () => {
   const history = useHistory();

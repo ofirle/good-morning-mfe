@@ -17,7 +17,9 @@ module.exports = {
     }
   },
   externals: {
-    "react": "react",
+    "react": "React",
+    "react-dom": "ReactDOM",
+    "react-router-dom": "ReactRouterDOM",
     "antd": "antd",
     "moment": "moment"
   },
@@ -66,7 +68,8 @@ module.exports = {
   output: {
     filename: 'index.js',
     library: {
-      type: "system"
+      name: "MicroAppSeedMFE",
+      type: "umd"
     },
     clean: true,
     path: path.resolve(__dirname, 'dist/@supersonic-micro-app-seed')

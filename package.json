@@ -11,7 +11,7 @@
     "lint": "eslint --ext .js,.jsx,.ts,.tsx src --color",
     "format": "prettier --write 'src/**/*.{ts,tsx,scss,css,json}'",
     "deploy": "divsrc-cli --deploy ./dist/@supersonic-admin-manage-partners-app --secret sk3e22f6abc48c283a131ed308ff95da04",
-    "emulate": "divsrc-cli --emulate ./dist --port 5555"
+    "emulate": "divsrc-cli --emulate ./dist --port 5556"
   },
   "author": "ilya@supersonic.com",
   "license": "ISC",
