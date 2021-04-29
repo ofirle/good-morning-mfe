@@ -2,8 +2,9 @@ const path = require('path');
 const CopyPlugin = require("copy-webpack-plugin");
 const { BundleAnalyzerPlugin } = require('webpack-bundle-analyzer');
 const CompressionPlugin = require("compression-webpack-plugin");
+const pkg = require('./package.json');
 
-
+const artifactName = pkg.name.replace('/', '-');
 module.exports = {
   mode: 'development',
   entry: {
@@ -72,6 +73,6 @@ module.exports = {
       type: "umd"
     },
     clean: true,
-    path: path.resolve(__dirname, 'dist/@supersonic-micro-app-seed')
+    path: path.resolve(__dirname, `dist/${artifactName}`)
   }
 };
