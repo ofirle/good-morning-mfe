@@ -11,7 +11,6 @@ import '../app/index.less';
 import '../app/supersonic.less';
 
 import Home from './components/Home';
-import Movie from './components/Movie';
 import { parseToken } from './supersonic-ui/services/utils.service';
 import SideMenu from './components/SideMenu';
 
@@ -24,11 +23,21 @@ if (token) {
 }
 
 declare global {
-  interface Window {
-    platforms: {
-      apiHost: string
+    interface Window {
+        react: any;
+        System: any;
+        platforms: {
+            apiHost?: string;
+            apiVersion?: string;
+            platform?: string;
+        };
+        navigate: any;
+        headeService: {
+            setTableState: any;
+            setCreateState: any;
+            setEditState: any;
+        };
     }
-  }
 }
 
 const Routing = (props: any) => (
@@ -36,26 +45,21 @@ const Routing = (props: any) => (
     <Route exact path="/">
       <Home {...props} />
     </Route>
-    <Route path="/details/:movieName">
-      <Movie {...props} />
-    </Route>
   </Switch>
 );
 
 const App = (props: any) => (
-  // eslint-disable-next-line jsx-a11y/no-static-element-interactions
   <Layout>
     <Sider width="220px">
       <SideMenu />
     </Sider>
     <Layout>
       <Header />
-      <Content style={{ padding: '22px', height: '90vh' }}>
+      <Content style={{ padding: '31px', backgroundColor: '#F5F5F5' }}>
         <Router basename={props.baseRoute}>
           <Routing {...props} />
         </Router>
       </Content>
-      <Footer>Footer</Footer>
     </Layout>
   </Layout >
 );

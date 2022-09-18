@@ -1,0 +1,6 @@
+.legendsContainer {
+    max-height: 400px;
+    width: 100%;
+    overflow-y: auto;
+    z-index: 0;
+}

@@ -10,40 +10,43 @@
   <script id="moment" src="https://unpkg.com/moment@2.27.0/moment.js"></script>
   <script id="antd" src="https://cdnjs.cloudflare.com/ajax/libs/antd/4.15.2/antd.min.js"></script>
   <script id="@ant-design/icons"
-    src="https://cdnjs.cloudflare.com/ajax/libs/ant-design-icons/4.6.2/index.umd.min.js"></script>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/antd/4.15.2/antd.min.css"
-    crossorigin="anonymous" />
+          src="https://cdnjs.cloudflare.com/ajax/libs/ant-design-icons/4.6.2/index.umd.min.js"></script>
+  <link rel="stylesheet" crossorigin="true" href="<%= htmlWebpackPlugin.options.cssPath %>" />
   <script type="text/javascript" crossorigin="true"
-    src="https://divsource.s3.eu-central-1.amazonaws.com/libs/system.js"></script>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+          src="https://divsource.s3.eu-central-1.amazonaws.com/libs/system.js"></script>
+  <link rel="stylesheet" type="text/css" charset="UTF-8" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css" />
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css" />
+
+  <script>
+    // window.System.import('/bundle.js')
+  </script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
   <title>React Typescript Webpack</title>
   <style>
-    .ant-menu-dark .ant-menu-inline.ant-menu-sub {
-      background-color: transparent !important;
+    body {
+      background-color: #F5F5F5 !important;
     }
 
-    .logoWrapper {
-      height: 120px;
+    #wrapper {
       width: 100%;
+      margin: auto;
     }
 
-    .logo {
-      background-repeat: no-repeat;
-      top: var(--logo-bottom-position, 15px);
-      cursor: pointer;
-      display: inline-block;
-      height: var(--logo-height, 32px);
-      left: var(--logo-left-position, 17px);
-      position: absolute;
-      width: var(--logo-width, 128px);
+    #modal-root {
+      position: fixed;
+      z-index: 999;
     }
   </style>
 </head>
 
 <body>
+<!-- React app root element -->
+<div id="wrapper">
   <div id="root"></div>
+  <div id="modal-root"></div>
+</div>
 </body>
 
 </html>

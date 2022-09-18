@@ -14,20 +14,23 @@
   },
   "rules": {
     "semi": "off",
+    "single": 0,
     "@typescript-eslint/semi": ["error"],
     "object-curly-spacing": ["warn", "always"],
     "no-unused-vars": [
       "warn",
       {
         "vars": "all",
-        "args": "none"
+        "args": "all",
+        "argsIgnorePattern": "^_"
       }
     ],
     "@typescript-eslint/no-unused-vars": [
-      "warn",
+      "error",
       {
         "vars": "all",
-        "args": "none"
+        "args": "all",
+        "argsIgnorePattern": "^_"
       }
     ],
     "@typescript-eslint/no-explicit-any": [

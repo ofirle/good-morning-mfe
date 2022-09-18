@@ -1,6 +1,6 @@
 {
   "compilerOptions": {
-    "outDir": "./dist/@supersonic-micro-app-seed",
+    "outDir": "./dist/@supersonic-good-morning-mfe",
     "target": "es5",
     "module": "es6",
     "jsx": "react",
@@ -9,7 +9,7 @@
     "moduleResolution": "node",
     "sourceMap": true,
     "declaration": true,
-    "declarationDir": "./dist/@supersonic-micro-app-seed"
+    "declarationDir": "./dist/@supersonic-good-morning-mfe"
   },
   "exclude": [
     "node_modules",
